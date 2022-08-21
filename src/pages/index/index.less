@@ -1,0 +1,91 @@
+.m-index {
+  .bg {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #F7F7F7;
+  }
+
+  .u-title {
+    position: relative;
+
+    .cover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      // width: 610px;
+      height: 281px;
+      // background-image: url('https://yuheng-1258939225.cos.ap-guangzhou.myqcloud.com/driver/img-home-cover.png');
+      background-image: url('./../../assets/index/banner.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+
+  .u-user {
+    position: relative;
+    top: 200px;
+    margin-left: 17px;
+    margin-right: 17px;
+    height: 94px;
+    background: #FFFFFF;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
+    border-radius: 8px;
+
+    .avatar {
+      position: absolute;
+      top: 12px;
+      left: 17px;
+      width: 70px;
+      height: 70px;
+      border-radius: 70px;
+
+      &.mock {
+        background-color: red;
+      }
+    }
+
+    .nickname {
+      position: absolute;
+      top: 23px;
+      left: 102px;
+      font-size: 18px;
+      color: #000000;
+
+      &::after {
+        content: ' ';
+        display: inline-block;
+        width: 39px;
+        height: 25px;
+        vertical-align: middle;
+        background-image: url('./../../assets/index/v5.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+
+    .greeting {
+      position: absolute;
+      top: 54px;
+      left: 102px;
+      font-size: 12px;
+      color: #000000;
+      
+      &::after {
+        content: ' ';
+        display: inline-block;
+        width: 7px;
+        height: 12px;
+        margin-left: 4px;
+        background-image: url('./../../assets/index/arrow.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+  }
+}

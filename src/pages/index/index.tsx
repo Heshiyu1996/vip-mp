@@ -1,8 +1,17 @@
 import Taro, { Component, Config } from '@tarojs/taro'
-import { View, Text } from '@tarojs/components'
+import { View, Text, OpenData } from '@tarojs/components'
+import { AtAvatar } from 'taro-ui';
 import './index.less'
 
 export default class Index extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      nickname: '',
+      mobileNum: ''
+    };
+  }
 
   componentWillMount () { }
 
@@ -26,9 +35,24 @@ export default class Index extends Component {
   }
 
   render () {
+    const { nickname, mobileNum } = this.state;
+
     return (
-      <View className='index'>
-        <Text>Hello world!</Text>
+      <View className='m-index'>
+        <View className='bg'></View>
+        <View className='u-title'>
+          <View className='cover'></View>
+        </View>
+        <View className='u-user'>
+          {/* 真实环境 */}
+          {/* <AtAvatar className='avatar' size='large' circle openData={{ type: 'userAvatarUrl' }}></AtAvatar>
+          <OpenData className='nickname' type='userNickName' /> */}
+          <View className='avatar mock'></View>
+          <View className='nickname mock'>小柯</View>
+          <View className='greeting'>
+            下午好，尊贵的金臻卡会员
+          </View>
+        </View>
       </View>
     )
   }

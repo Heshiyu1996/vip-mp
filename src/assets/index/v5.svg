@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>会员V5</title>
+    <defs>
+        <linearGradient x1="13.9177712%" y1="10.992203%" x2="92.5501376%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFBF62" offset="0%"></stop>
+            <stop stop-color="#FF6E00" offset="100%"></stop>
+        </linearGradient>
+        <path d="M20.00004,0 L3.99995999,0 C1.791,0 0,1.79098209 0,4.00003999 L0,19.99984 C0,22.2086579 1.791,24 3.99995999,24 L20.00004,24 C22.20888,24 24,22.2086579 24,19.99984 L24,4.00003999 C24,1.79098209 22.20888,0 20.00004,0 Z M20.01336,19.0826892 L15.29952,19.0758492 L15.29952,18.1330187 L19.07052,18.1330187 L19.07052,16.2444776 L15.2994,16.2498775 L15.2994,13.399186 L15.2994,12.4719553 L16.24224,12.4719553 L20.01324,12.4719553 L20.01324,13.399186 L16.24224,13.399186 L16.24224,15.300207 L20.01324,15.300207 L20.01324,15.304887 L20.01336,15.304887 L20.01336,19.0826892 Z M6.81491999,20.0131599 L3.04391999,20.0131599 L3.04391999,6.90329098 L2.10119999,6.88853112 L2.10119999,5.87214129 L3.98664,5.87214129 L5.87220001,5.87214129 L5.87220001,15.3896061 L15.29964,5.87214129 L20.56296,5.87214129 L6.81491999,20.0131599 Z" id="path-2"></path>
+        <filter x="-16.7%" y="-8.3%" width="133.3%" height="133.3%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="vip-小程序" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="首页" transform="translate(-165.000000, -222.000000)" fill-rule="nonzero">
+            <g id="编组" transform="translate(20.000000, 199.000000)">
+                <g id="形状" transform="translate(147.000000, 23.000000)">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <use fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
