@@ -1,8 +1,9 @@
 const config = {
   projectName: 'vip-mp',
   date: '2022-8-20',
-  designWidth: 750,
+  designWidth: 414,
   deviceRatio: {
+    '414': 1.81,
     '640': 2.34 / 2,
     '750': 1,
     '828': 1.81 / 2
