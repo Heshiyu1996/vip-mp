@@ -1,7 +1,7 @@
-import Taro, { Component, Config } from '@tarojs/taro'
-import { View, Text, OpenData } from '@tarojs/components'
+import Taro, { Component, Config } from '@tarojs/taro';
+import { View, Text, OpenData } from '@tarojs/components';
 import { AtAvatar, AtIcon } from 'taro-ui';
-import './index.less'
+import './index.less';
 
 export default class Index extends Component {
   constructor(props) {
@@ -51,9 +51,10 @@ export default class Index extends Component {
           <View className='nickname mock'>小柯</View>
           <View className='greeting'>
             下午好，尊贵的金臻卡会员
+            <AtIcon className='icon-right' value='chevron-right' size='8'></AtIcon>
           </View>
         </View>
       </View>
-    )
+    );
   }
 }
