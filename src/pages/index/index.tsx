@@ -1,9 +1,9 @@
-import Taro, { Component, Config } from '@tarojs/taro'
-import { View, Text, OpenData } from '@tarojs/components'
-import { AtAvatar, AtIcon } from 'taro-ui';
-import Book from './components/book';
+import Taro, { Component, Config } from '@tarojs/taro';
+import { View, Text, OpenData } from '@tarojs/components';
 import User from './components/user';
-import './index.less'
+import Book from './components/book';
+import Service from './components/service';
+import './index.less';
 
 export default class Index extends Component {
   constructor(props) {
@@ -47,10 +47,10 @@ export default class Index extends Component {
         </View>
         
         <User />
-
         <Book />
+        <Service />
 
       </View>
-    )
+    );
   }
 }
