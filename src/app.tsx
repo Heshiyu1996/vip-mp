@@ -1,6 +1,9 @@
 import Taro, { Component, Config } from '@tarojs/taro'
 import Index from './pages/index'
 
+
+// eslint-disable-next-line import/first
+import 'taro-ui/dist/style/index.scss'
 import './app.less'
 
 // 如果需要在 h5 环境中开启 React Devtools
