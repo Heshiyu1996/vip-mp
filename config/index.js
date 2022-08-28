@@ -1,3 +1,5 @@
+const path = require('path');
+
 const config = {
   projectName: 'vip-mp',
   date: '2022-8-20',
@@ -7,6 +9,9 @@ const config = {
     '640': 2.34 / 2,
     '750': 1,
     '828': 1.81 / 2
+  },
+  alias: {
+    '@': path.resolve(__dirname, '..', 'src')
   },
   sourceRoot: 'src',
   outputRoot: 'dist',
