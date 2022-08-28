@@ -3,6 +3,7 @@ import { View, Text, OpenData } from '@tarojs/components';
 import User from './components/user';
 import Book from './components/book';
 import Service from './components/service';
+import Facility from './components/facility';
 import './index.less';
 
 export default class Index extends Component {
@@ -49,6 +50,7 @@ export default class Index extends Component {
         <User />
         <Book />
         <Service />
+        <Facility />
 
       </View>
     );
