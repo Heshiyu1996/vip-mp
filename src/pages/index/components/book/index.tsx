@@ -1,8 +1,6 @@
 import Taro, { Component, Config } from '@tarojs/taro'
-import { View, Text, OpenData } from '@tarojs/components'
+import { View } from '@tarojs/components'
 import { AtAvatar, AtIcon } from 'taro-ui';
-import Book from './components/book';
-import User from './components/user';
 import './index.less'
 
 export default class Index extends Component {
@@ -37,20 +35,30 @@ export default class Index extends Component {
   }
 
   render () {
-    const { nickname, mobileNum } = this.state;
-
     return (
-      <View className='m-index'>
-        <View className='bg'></View>
-        <View className='u-title'>
-          <View className='cover'></View>
+      <View className='u-book'>
+      <View className='date-wrapper'>
+        <View className='date-item'>
+          <View className='label'>入住</View>
+          <View className='value-date'>7月9日</View>
+          <View className='value-day'>周六</View>
         </View>
-        
-        <User />
-
-        <Book />
-
+        <View className='date-item'>
+          <View className='label'>离店</View>
+          <View className='value-date'>7月10日</View>
+          <View className='value-day'>周日</View>
+        </View>
+        <View className='total-item'>
+          <View className='total-item'>
+            共 1 晚
+            <AtIcon className='icon-right' value='chevron-right' size='8'></AtIcon>
+          </View>
+        </View>
       </View>
+      <View className='btn-wrapper'>
+        <View className='btn-book'>立即预约</View>
+      </View>
+    </View>
     )
   }
 }

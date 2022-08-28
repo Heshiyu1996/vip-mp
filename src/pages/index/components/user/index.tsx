@@ -1,8 +1,6 @@
 import Taro, { Component, Config } from '@tarojs/taro'
 import { View, Text, OpenData } from '@tarojs/components'
 import { AtAvatar, AtIcon } from 'taro-ui';
-import Book from './components/book';
-import User from './components/user';
 import './index.less'
 
 export default class Index extends Component {
@@ -45,11 +43,16 @@ export default class Index extends Component {
         <View className='u-title'>
           <View className='cover'></View>
         </View>
-        
-        <User />
-
-        <Book />
-
+        <View className='u-user'>
+          {/* 真实环境 */}
+          {/* <AtAvatar className='avatar' size='large' circle openData={{ type: 'userAvatarUrl' }}></AtAvatar>
+          <OpenData className='nickname' type='userNickName' /> */}
+          <View className='avatar mock'></View>
+          <View className='nickname mock'>小柯</View>
+          <View className='greeting'>
+            下午好，尊贵的金臻卡会员
+          </View>
+        </View>
       </View>
     )
   }
