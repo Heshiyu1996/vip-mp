@@ -1,10 +1,10 @@
-import Taro, { Component, Config } from '@tarojs/taro'
-import Index from './pages/index'
+import Taro, { Component, Config } from '@tarojs/taro';
+import Index from './pages/index';
 
 
 // eslint-disable-next-line import/first
-import 'taro-ui/dist/style/index.scss'
-import './app.less'
+import 'taro-ui/dist/style/index.scss';
+import './app.less';
 
 // 如果需要在 h5 环境中开启 React Devtools
 // 取消以下注释：
@@ -31,7 +31,8 @@ class App extends Component {
    */
   config: Config = {
     pages: [
-      'pages/index/index'
+      'pages/code/index',
+      'pages/index/index',
     ],
     window: {
       backgroundTextStyle: 'light',
@@ -46,8 +47,8 @@ class App extends Component {
   render () {
     return (
       <Index />
-    )
+    );
   }
 }
 
-Taro.render(<App />, document.getElementById('app'))
+Taro.render(<App />, document.getElementById('app'));
